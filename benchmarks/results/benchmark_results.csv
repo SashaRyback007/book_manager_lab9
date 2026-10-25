@@ -1,59 +1,59 @@
 operation,data_size,method,workers,run_1,run_2,run_3,run_4,run_5,mean_s,median_s,peak_memory_mb,speedup,correct
-pages_statistics,2000,Python loops,1,0.000803,0.000796,,,,0.000800,0.000800,0.00,1.00,True
-pages_statistics,2000,NumPy (list->array),,0.000410,0.000164,,,,0.000287,0.000287,0.03,2.79,True
-pages_statistics,2000,NumPy (готовий array),,0.000101,0.000044,,,,0.000073,0.000073,0.03,11.00,True
-pages_statistics,2000,ThreadPoolExecutor,1,0.004885,0.000880,,,,0.002883,0.002883,0.01,0.28,True
-pages_statistics,2000,ProcessPoolExecutor,1,0.348670,0.331833,,,,0.340252,0.340252,0.04,0.00,True
-pages_statistics,2000,ThreadPoolExecutor,2,0.001901,0.001935,,,,0.001918,0.001918,0.01,0.42,True
-pages_statistics,2000,ProcessPoolExecutor,2,0.385060,0.297457,,,,0.341258,0.341258,0.04,0.00,True
-scores,2000,Sequential,1,0.014539,0.012461,,,,0.013500,0.013500,0.04,1.00,True
-scores,2000,ThreadPoolExecutor,1,0.038735,0.031582,,,,0.035159,0.035159,1.57,0.38,True
-scores,2000,ThreadPoolExecutor,2,0.037549,0.030994,,,,0.034271,0.034271,1.58,0.39,True
-scores,2000,ProcessPoolExecutor,1,0.243331,0.255459,,,,0.249395,0.249395,0.06,0.05,True
-scores,2000,ProcessPoolExecutor,2,0.453278,0.384577,,,,0.418927,0.418927,0.06,0.03,True
-scores,2000,NumPy vectorized,,0.001116,0.001308,,,,0.001212,0.001212,0.06,11.13,True
-search_by_author,2000,Python loops,1,0.000148,0.000095,,,,0.000122,0.000122,0.00,1.00,True
-search_by_author,2000,NumPy (готові arrays),,0.000102,0.000025,,,,0.000064,0.000064,0.00,1.91,True
-filter_by_year,2000,Python loops,1,0.000235,0.000178,,,,0.000206,0.000206,0.00,1.00,True
-filter_by_year,2000,NumPy (готові arrays),,0.000100,0.000017,,,,0.000058,0.000058,0.01,3.53,True
-group_by_author,2000,Python loops,1,0.000957,0.000837,,,,0.000897,0.000897,0.07,1.00,True
-group_by_author,2000,NumPy (готові arrays),,0.001879,0.000916,,,,0.001397,0.001397,0.05,0.64,True
-longest_book,2000,Python loops,1,0.000115,0.000118,,,,0.000117,0.000117,0.00,1.00,True
-longest_book,2000,NumPy (готові arrays),,0.000108,0.000012,,,,0.000060,0.000060,0.00,1.94,True
-author_cache,2000,Без кешу (cold),,0.000062,0.000058,0.000062,0.000061,0.000060,0.000061,0.000061,,1.00,True
-author_cache,2000,lru_cache (warm),,0.000002,0.000001,0.000001,0.000000,0.000000,0.000001,0.000001,,68.75,True
-pages_statistics,10000,Python loops,1,0.002420,0.002565,,,,0.002493,0.002493,0.00,1.00,True
-pages_statistics,10000,NumPy (list->array),,0.001068,0.000535,,,,0.000802,0.000802,0.15,3.11,True
-pages_statistics,10000,NumPy (готовий array),,0.000372,0.000140,,,,0.000256,0.000256,0.15,9.75,True
-pages_statistics,10000,ThreadPoolExecutor,1,0.006392,0.002876,,,,0.004634,0.004634,0.04,0.54,True
-pages_statistics,10000,ProcessPoolExecutor,1,0.357791,0.260711,,,,0.309251,0.309251,0.11,0.01,True
-pages_statistics,10000,ThreadPoolExecutor,2,0.002862,0.003539,,,,0.003201,0.003201,0.04,0.78,True
-pages_statistics,10000,ProcessPoolExecutor,2,0.290761,0.271512,,,,0.281136,0.281136,0.08,0.01,True
-scores,10000,Sequential,1,0.053617,0.050888,,,,0.052253,0.052253,0.19,1.00,True
-scores,10000,ThreadPoolExecutor,1,0.169494,0.167061,,,,0.168277,0.168277,7.89,0.31,True
-scores,10000,ThreadPoolExecutor,2,0.226369,0.181129,,,,0.203749,0.203749,7.91,0.26,True
-scores,10000,ProcessPoolExecutor,1,0.310788,0.297371,,,,0.304079,0.304079,0.41,0.17,True
-scores,10000,ProcessPoolExecutor,2,0.301709,0.317301,,,,0.309505,0.309505,0.33,0.17,True
-scores,10000,NumPy vectorized,,0.004453,0.004190,,,,0.004321,0.004321,0.31,12.09,True
-search_by_author,10000,Python loops,1,0.000581,0.000321,,,,0.000451,0.000451,0.00,1.00,True
-search_by_author,10000,NumPy (готові arrays),,0.000118,0.000027,,,,0.000072,0.000072,0.01,6.24,True
-filter_by_year,10000,Python loops,1,0.000497,0.000483,,,,0.000490,0.000490,0.01,1.00,True
-filter_by_year,10000,NumPy (готові arrays),,0.000096,0.000031,,,,0.000063,0.000063,0.03,7.72,True
-group_by_author,10000,Python loops,1,0.003298,0.002110,,,,0.002704,0.002704,0.07,1.00,True
-group_by_author,10000,NumPy (готові arrays),,0.000586,0.000355,,,,0.000470,0.000470,0.08,5.75,True
-longest_book,10000,Python loops,1,0.000420,0.000313,,,,0.000366,0.000366,0.00,1.00,True
-longest_book,10000,NumPy (готові arrays),,0.000027,0.000007,,,,0.000017,0.000017,0.00,21.11,True
-author_cache,10000,Без кешу (cold),,0.000265,0.000271,0.000443,0.000402,0.000445,0.000365,0.000402,,1.00,True
-author_cache,10000,lru_cache (warm),,0.000002,0.000001,0.000001,0.000001,0.000001,0.000001,0.000001,,480.42,True
-io_json_latency_0ms,10000,Sequential I/O,1,0.022537,0.023977,,,,0.023257,0.023257,1.44,1.00,True
-io_json_latency_0ms,10000,ThreadPoolExecutor,1,0.029793,0.023465,,,,0.026629,0.026629,1.45,0.87,True
-io_json_latency_0ms,10000,ThreadPoolExecutor,2,0.024281,0.025905,,,,0.025093,0.025093,1.65,0.93,True
-io_json_latency_50ms,10000,Sequential I/O,1,0.445764,0.444621,,,,0.445193,0.445193,1.44,1.00,True
-io_json_latency_50ms,10000,ThreadPoolExecutor,1,0.432668,0.437639,,,,0.435154,0.435154,1.45,1.02,True
-io_json_latency_50ms,10000,ThreadPoolExecutor,2,0.224663,0.228904,,,,0.226783,0.226783,1.45,1.96,True
-io_csv_latency_0ms,10000,Sequential I/O,1,0.041230,0.033529,,,,0.037380,0.037380,1.33,1.00,True
-io_csv_latency_0ms,10000,ThreadPoolExecutor,1,0.036143,0.032921,,,,0.034532,0.034532,1.34,1.08,True
-io_csv_latency_0ms,10000,ThreadPoolExecutor,2,0.047268,0.033624,,,,0.040446,0.040446,1.34,0.92,True
-io_csv_latency_50ms,10000,Sequential I/O,1,0.454154,0.454395,,,,0.454274,0.454274,1.33,1.00,True
-io_csv_latency_50ms,10000,ThreadPoolExecutor,1,0.450981,0.452359,,,,0.451670,0.451670,1.34,1.01,True
-io_csv_latency_50ms,10000,ThreadPoolExecutor,2,0.233242,0.234977,,,,0.234110,0.234110,1.34,1.94,True
+pages_statistics,2000,Python loops,1,0.000771,0.000819,,,,0.000795,0.000795,0.00,1.00,True
+pages_statistics,2000,NumPy (list->array),,0.000496,0.000187,,,,0.000342,0.000342,0.03,2.33,True
+pages_statistics,2000,NumPy (готовий array),,0.000184,0.000051,,,,0.000117,0.000117,0.03,6.78,True
+pages_statistics,2000,ThreadPoolExecutor,1,0.003556,0.001607,,,,0.002582,0.002582,0.01,0.31,True
+pages_statistics,2000,ProcessPoolExecutor,1,0.469061,0.382993,,,,0.426027,0.426027,0.04,0.00,True
+pages_statistics,2000,ThreadPoolExecutor,2,0.002199,0.001348,,,,0.001774,0.001774,0.01,0.45,True
+pages_statistics,2000,ProcessPoolExecutor,2,0.388359,0.411469,,,,0.399914,0.399914,0.05,0.00,True
+scores,2000,Sequential,1,0.010143,0.010653,,,,0.010398,0.010398,0.04,1.00,True
+scores,2000,ThreadPoolExecutor,1,0.049327,0.037141,,,,0.043234,0.043234,1.62,0.24,True
+scores,2000,ThreadPoolExecutor,2,0.034008,0.031591,,,,0.032800,0.032800,1.60,0.32,True
+scores,2000,ProcessPoolExecutor,1,0.250135,0.234599,,,,0.242367,0.242367,0.06,0.04,True
+scores,2000,ProcessPoolExecutor,2,0.289411,0.293002,,,,0.291207,0.291207,0.06,0.04,True
+scores,2000,NumPy vectorized,,0.001060,0.000931,,,,0.000995,0.000995,0.06,10.45,True
+search_by_author,2000,Python loops,1,0.000073,0.000052,,,,0.000063,0.000063,0.00,1.00,True
+search_by_author,2000,NumPy (готові arrays),,0.000081,0.000024,,,,0.000052,0.000052,0.00,1.19,True
+filter_by_year,2000,Python loops,1,0.000123,0.000083,,,,0.000103,0.000103,0.00,1.00,True
+filter_by_year,2000,NumPy (готові arrays),,0.000047,0.000017,,,,0.000032,0.000032,0.01,3.24,True
+group_by_author,2000,Python loops,1,0.001110,0.000921,,,,0.001015,0.001015,0.07,1.00,True
+group_by_author,2000,NumPy (готові arrays),,0.000682,0.000626,,,,0.000654,0.000654,0.05,1.55,True
+longest_book,2000,Python loops,1,0.000112,0.000064,,,,0.000088,0.000088,0.00,1.00,True
+longest_book,2000,NumPy (готові arrays),,0.000039,0.000007,,,,0.000023,0.000023,0.00,3.85,True
+author_cache,2000,Без кешу (cold),,0.000060,0.000055,0.000053,0.000053,0.000055,0.000055,0.000055,,1.00,True
+author_cache,2000,lru_cache (warm),,0.000003,0.000001,0.000000,0.000000,0.000000,0.000001,0.000000,,60.09,True
+pages_statistics,10000,Python loops,1,0.002338,0.002140,,,,0.002239,0.002239,0.00,1.00,True
+pages_statistics,10000,NumPy (list->array),,0.001090,0.000536,,,,0.000813,0.000813,0.15,2.76,True
+pages_statistics,10000,NumPy (готовий array),,0.000089,0.000068,,,,0.000079,0.000079,0.15,28.42,True
+pages_statistics,10000,ThreadPoolExecutor,1,0.002839,0.004088,,,,0.003463,0.003463,0.04,0.65,True
+pages_statistics,10000,ProcessPoolExecutor,1,0.249044,0.260759,,,,0.254902,0.254902,0.11,0.01,True
+pages_statistics,10000,ThreadPoolExecutor,2,0.003486,0.002467,,,,0.002976,0.002976,0.04,0.75,True
+pages_statistics,10000,ProcessPoolExecutor,2,0.268060,0.271734,,,,0.269897,0.269897,0.10,0.01,True
+scores,10000,Sequential,1,0.055280,0.049838,,,,0.052559,0.052559,0.19,1.00,True
+scores,10000,ThreadPoolExecutor,1,0.168860,0.155608,,,,0.162234,0.162234,7.89,0.32,True
+scores,10000,ThreadPoolExecutor,2,0.161056,0.164827,,,,0.162941,0.162941,7.87,0.32,True
+scores,10000,ProcessPoolExecutor,1,0.289738,0.386953,,,,0.338346,0.338346,0.41,0.16,True
+scores,10000,ProcessPoolExecutor,2,0.407310,0.302497,,,,0.354903,0.354903,0.32,0.15,True
+scores,10000,NumPy vectorized,,0.004529,0.004221,,,,0.004375,0.004375,0.31,12.01,True
+search_by_author,10000,Python loops,1,0.000991,0.000548,,,,0.000769,0.000769,0.00,1.00,True
+search_by_author,10000,NumPy (готові arrays),,0.000486,0.000069,,,,0.000277,0.000277,0.01,2.77,True
+filter_by_year,10000,Python loops,1,0.001375,0.000426,,,,0.000900,0.000900,0.01,1.00,True
+filter_by_year,10000,NumPy (готові arrays),,0.000091,0.000028,,,,0.000060,0.000060,0.03,15.00,True
+group_by_author,10000,Python loops,1,0.002222,0.002221,,,,0.002222,0.002222,0.07,1.00,True
+group_by_author,10000,NumPy (готові arrays),,0.000496,0.000346,,,,0.000421,0.000421,0.08,5.28,True
+longest_book,10000,Python loops,1,0.000343,0.000303,,,,0.000323,0.000323,0.00,1.00,True
+longest_book,10000,NumPy (готові arrays),,0.000022,0.000007,,,,0.000015,0.000015,0.00,22.14,True
+author_cache,10000,Без кешу (cold),,0.000247,0.000273,0.000251,0.000246,0.000249,0.000253,0.000249,,1.00,True
+author_cache,10000,lru_cache (warm),,0.000002,0.000001,0.000001,0.000000,0.000001,0.000001,0.000001,,294.30,True
+io_json_latency_0ms,10000,Sequential I/O,1,0.025719,0.023737,,,,0.024728,0.024728,1.44,1.00,True
+io_json_latency_0ms,10000,ThreadPoolExecutor,1,0.026568,0.024467,,,,0.025518,0.025518,1.45,0.97,True
+io_json_latency_0ms,10000,ThreadPoolExecutor,2,0.025172,0.028729,,,,0.026951,0.026951,1.45,0.92,True
+io_json_latency_50ms,10000,Sequential I/O,1,0.441552,0.443702,,,,0.442627,0.442627,1.44,1.00,True
+io_json_latency_50ms,10000,ThreadPoolExecutor,1,0.451452,0.432424,,,,0.441938,0.441938,1.45,1.00,True
+io_json_latency_50ms,10000,ThreadPoolExecutor,2,0.218978,0.225407,,,,0.222192,0.222192,1.45,1.99,True
+io_csv_latency_0ms,10000,Sequential I/O,1,0.092190,0.053896,,,,0.073043,0.073043,1.33,1.00,True
+io_csv_latency_0ms,10000,ThreadPoolExecutor,1,0.036276,0.032062,,,,0.034169,0.034169,1.34,2.14,True
+io_csv_latency_0ms,10000,ThreadPoolExecutor,2,0.047078,0.032952,,,,0.040015,0.040015,1.34,1.83,True
+io_csv_latency_50ms,10000,Sequential I/O,1,0.454532,0.460491,,,,0.457512,0.457512,1.33,1.00,True
+io_csv_latency_50ms,10000,ThreadPoolExecutor,1,0.454385,0.443996,,,,0.449191,0.449191,1.34,1.02,True
+io_csv_latency_50ms,10000,ThreadPoolExecutor,2,0.226218,0.234232,,,,0.230225,0.230225,1.34,1.99,True
